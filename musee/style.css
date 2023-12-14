@@ -1,0 +1,26 @@
+body
+{
+    display: flex;
+    justify-content: center;
+}
+
+.container
+{
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(196, 196, 196);
+}
+
+.informations
+{
+    padding: 125px;
+}
+
+.information
+{
+    display: flex;
+    justify-content: space-between;
+    width: 250px;
+    margin-bottom: 10px;
+}
