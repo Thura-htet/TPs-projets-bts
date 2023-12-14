@@ -1,0 +1,71 @@
+<style>
+    .container {
+      height: 200px;
+      position: relative;
+      border: 3px solid green;
+    }
+    
+    .vertical-center {
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+    }
+
+    div {
+        display: inline-block;
+        height: 50px;
+        width: 50px;
+        background-color: black
+    }
+
+    .strokeme {
+        color: white;
+        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    }
+    </style>
+    
+<div class="container">
+    <div class="vertical-center">
+    <p>I am vertically centered.</p>
+    </div>
+</div> 
+
+<section>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div class="strokeme">
+        This text should have a stroke in some browsers
+    </div>
+</section>
+
+<script>
+    let a = []
+    console.log(a)
+    let b = [1,2,3,4]
+    console.log(b)
+    a = b
+    console.log(a)
+</script>

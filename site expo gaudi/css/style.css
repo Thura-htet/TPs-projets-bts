@@ -1,0 +1,449 @@
+html, body {
+    margin: 0;
+    height: 100%;
+    position: relative;
+    overflow: auto; /* keeps the sticky property of the nav bar */
+}
+
+/* min-height: 100vh */
+
+/* font-family: 'Brittany Signature', sans-serif; */
+                                                
+
+h3 {
+    font-family: 'Roboto Slab', 'sans-serif';
+    font-weight: 700;
+    font-size: 40px;
+}
+
+p {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+td {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+/* ===== TITLE ===== */
+
+.title {
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+    overflow-y: hidden;
+}
+
+#trente {
+    font-family: 'Roboto Condensed', 'sans-serif';
+    font-weight: 700;
+    font-size: 35px;
+    position: relative;
+    top: 240px; left: 6.7%;
+}
+
+#avec {
+    z-index: 3;
+    font-family: 'Brittany Signature', sans-serif;
+    font-size: 60px;
+    color: white;
+    position: relative;
+    top: 270px; left: 15%;
+}
+
+#gaudi {
+    font-family: 'Roboto Condensed', 'sans-serif';
+    font-weight: 700;
+    font-size: 175px;
+    margin: 0;
+    color: black;
+    -webkit-text-fill-color: #ffffff00; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    position: relative;
+    top: 120px; left: 7.5%;
+}
+
+#title-shadow {
+    font-family: 'Roboto Condensed', 'sans-serif';
+    font-weight: 700;
+    font-size: 175px;
+    margin: 0;
+    color: black;
+    z-index: -1;
+    position: relative;
+    top: -77px; left: 6.7%;
+}
+
+.image-strip {
+    z-index: -1;
+    width: 40%;
+    position: relative;
+    top: -260px; left: 6.7%;
+}
+
+.image-strip img {
+    max-width: 100%;
+}
+
+/* ===== NAVBAR ===== */
+
+#nav-bar {
+    /* display: inline-block; */
+    position: sticky;
+    top: 0;
+    background-color: black;
+    opacity: 1;
+    z-index: 10;
+    width: auto;
+    height: 12%;
+    font-family: 'Roboto Slab', serif;
+    font-size: 30px;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    /* flex: 3; */
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 6.7%;
+
+}
+
+/* .nav-element {
+    display: flex;
+} */
+
+ul {
+    width: 60%
+}
+
+ul, li {
+    text-align: center;
+    display: inline;
+    /* flex-wrap: wrap; */
+    flex: 1;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    flex: 1;
+    /* max-width: 50%; */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+nav a {
+    transition: 0.8;
+}
+
+a:link {
+    color: white;
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+/* ===== BIOGRAPHIE ===== */
+
+section#biographie-section {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* .bio-div-image {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+} */
+
+.bio-div {
+    position: absolute;
+    background-color: black;
+    height: 100%;
+    width: 20%;
+    z-index: -2;
+    /* display: flex;
+    align-items: center; */
+}
+
+/* put the image and the text in a div and use flex */
+
+.bio-image img {
+    position: absolute;
+    width: 25%;
+    height: 70%;
+    z-index: 4;
+    margin-top: 7.5%;
+    margin-bottom: 7.5%;
+    margin-left: 6.7%;
+}
+
+.biographie {
+    position: relative;
+    margin: auto 0;
+    margin-right: 6.7%;
+    width: 40%;
+    height: 63%;
+    overflow: auto;
+    /* background-color: #f3f3f3; */
+    padding: 2%;
+    /* font-weight: 300; */
+}
+
+/* ===== critique ===== */
+
+.critique-video {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+
+.critique-img {
+    width: 60%;
+    position: relative;
+    top: 15%;
+    left: 6.7%;
+}
+
+.critique-img img {
+    max-height: 100%;
+    width: 100%;
+}
+
+.critique-description {
+    background-color: #ffffff;
+    /* opacity: 80%;  */
+    width: 30%;
+    position: relative;
+    top: 0.5%; left: 50%;
+    padding: 1%;
+}
+
+/* ===== explicatif ===== */
+.explicatif {
+    padding: 6.7%;
+}
+
+/* ===== OEUVRES ===== */
+
+section#oeuvres-section {
+    background-color: black;
+}
+
+.oeuvres {
+    width:  100%;
+    margin: 0px;
+    columns: 3;
+    column-gap: 10px;
+    box-sizing: border-box;
+    padding: 6.7%;
+    max-width: 100%;
+}
+
+.image {
+    width: 95%;
+}
+
+.image img {
+    width: 100%;
+    transition: .8s opacity;
+    margin-bottom: 20px;
+}
+
+/* .oeuvres div:nth-of-type(1) {
+    position: relative;
+    top: 20px
+}
+
+.oeuvres div:nth-of-type(8) {
+    height: 100px
+} */
+
+section#oeuvres-section:hover img { /* the img here is somehow necessary */
+    opacity: 0.2;
+}
+
+section#oeuvres-section:hover img:hover {
+    opacity: 1;
+}
+
+/* ===== VISITE ===== */
+/* .section-visite {
+    display: flex;
+    align-items: center;
+} */
+
+/* .section-visite .visite-image {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+} */
+
+/* .section {
+    height: 100%
+} */
+
+/* .visite-image img {
+    margin: auto 15%;
+    height: 100vh;
+    width: 70%;
+} */
+
+/* .container-div {
+    height: 100%;
+} */
+
+/* .padding-space {
+    height: 150px;
+} */
+
+/* .section-visite .visite {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%
+} */
+
+.informations-visite {
+    padding: 0 10%;
+}
+
+/* .plan-site {
+    margin-bottom: 3%;
+} */
+
+.plan-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 2%;
+    border-bottom: 1px solid black;
+}
+
+.plan-img {
+    width: 57%;
+}
+
+.plan-img img {
+    max-width: 100%;
+    max-height: 100%;
+
+}
+
+.adresse {
+    width: 35%;
+}
+
+.horaires-tarifs {
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ht-img {
+    width: 57%;
+    height: 50%;
+    /* flex: 1.5; */
+}
+
+.ht-img img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.ht {
+    /* padding-right: 6%;
+    border-right: 1px solid black; */
+    /* flex: 1; */
+    width: 35%;
+    height: 100%;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-between; */
+}
+
+/* .horaires, .tarifs {
+    background-color: #f3f3f3;
+    padding: 2rem;
+    margin: 5rem;
+    width: 100%;
+    height: 80%;
+} */
+
+/* .block {
+    height: 50vh;
+    width: 100%;
+    background-color: black;
+    z-index: -1;
+    position: relative;
+    top: -200px;
+} */
+
+table {
+    width: 100%;
+}
+
+tr {
+    height: 30px;
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media screen and (max-width: 1000px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    .oeuvres {
+        width: 90%;
+        column-count: 2;
+        column-gap: 0;
+        margin: auto;
+    }
+    .image {
+        margin: 0 auto  1rem;
+        width: 95%;
+    }
+    .oeuvres div:nth-of-type(1) {
+        height: 30px
+    }
+    .extra {
+        height: 0px;
+        margin-bottom: 0rem;
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .oeuvres {
+        width: auto;
+        column-count: 1;
+        column-gap: 0;
+    }
+    .image {
+        margin: 0 auto  1rem;
+        width: 95%;
+    }
+    .oeuvres div:nth-of-type(1) {
+        height: 30px
+    }
+    .extra {
+        height: 0px;
+        margin-bottom: 0rem;
+        display: none;
+    }
+}
